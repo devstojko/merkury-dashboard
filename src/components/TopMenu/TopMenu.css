@@ -1,0 +1,22 @@
+.TopMenu {
+  display: block;
+  background-color: white;
+  height: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(132, 146, 175, .3);
+}
+
+.TopMenu__list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.TopMenu__listItem {
+  display: inline-block;
+}

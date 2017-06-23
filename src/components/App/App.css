@@ -1,0 +1,63 @@
+.App {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.App__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.FaIcon {
+  margin-right: 15px;
+}
+
+.FaIcon_infoColor {
+  color: #5384ff;
+}
+
+
+.IconButton {
+  border: 0;
+  background: none;
+}
+
+
+.Button {
+  display: inline-flex;
+  border: 0;
+  border-radius: 32px;
+  align-items: center;
+  background: none;
+  background-color: #5584ff;
+  padding: 14px 24px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Button__icon {
+  margin-right: 10px;
+}
+
+.MainContent {
+  background-color: #f6f7fa;
+  flex: 1;
+  display: flex;
+  overflow: auto;
+}
+
+.MainContent__inner {
+  padding: 50px 40px;
+  max-height: 100;
+  overflow-y: scroll;
+}
+
+.MainContent p {
+  font-size: 56px;
+}

@@ -1,0 +1,41 @@
+.SideMenu {
+  background-color: #0e1a35;
+  width: 320px;
+}
+
+.SideMenu__brand {
+  padding-left: 40px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.SideMenu__list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.SideMenu__listItem {
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.SideMenu__listItem:last-child {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.SideMenu__link {
+  display: flex;
+  padding: 40px 0 40px 50px;
+  color: white;
+  align-items: center;
+  text-decoration: none;
+  border-left: 10px solid transparent;
+  transition: .3s ease;
+}
+
+.SideMenu__link_active,
+.SideMenu__link:hover {
+  border-left-color: #5584ff;
+  background-color: #122143;
+}
