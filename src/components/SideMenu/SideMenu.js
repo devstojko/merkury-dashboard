@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import './SideMenu.css';
 import logo from '../../media/logo.png';
 
@@ -19,16 +20,16 @@ class SideMenu extends Component {
         </div>
         <ul className="SideMenu__list">
           <li className="SideMenu__listItem">
-            <a href="" className="SideMenu__link SideMenu__link_active">
+            <NavLink exact to="/" className="SideMenu__link" activeClassName="SideMenu__link_active">
               <FaHome size={24} className="FaIcon FaIcon_infoColor"/>
               Home
-            </a>
+            </NavLink>
           </li>
           <li className="SideMenu__listItem">
-            <a href="" className="SideMenu__link">
+            <NavLink exact to="/about" className="SideMenu__link" activeClassName="SideMenu__link_active">
               <FaTask size={24} className="FaIcon FaIcon_infoColor"/>
               Workflow
-            </a>
+            </NavLink>
           </li>
           <li className="SideMenu__listItem">
             <a href="" className="SideMenu__link">

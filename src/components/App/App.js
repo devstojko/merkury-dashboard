@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 
 import SideMenu from '../SideMenu/SideMenu'
 import TopMenu from '../TopMenu/TopMenu';
 
-class App extends Component {
-  render() {
+
+const App = (props) => {
     return (
       <div className="App">
         <SideMenu />
@@ -14,18 +14,7 @@ class App extends Component {
 
           <div className="MainContent">
             <div className="MainContent__inner">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est cum, quasi debitis nobis earum. Ad nostrum quidem modi natus expedita eaque rerum reprehenderit, qui libero ut. Ipsam, adipisci facilis.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est cum, quasi debitis nobis earum. Ad nostrum quidem modi natus expedita eaque rerum reprehenderit, qui libero ut. Ipsam, adipisci facilis.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est cum, quasi debitis nobis earum. Ad nostrum quidem modi natus expedita eaque rerum reprehenderit, qui libero ut. Ipsam, adipisci facilis.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est cum, quasi debitis nobis earum. Ad nostrum quidem modi natus expedit eaque rerum reprehenderit, qui libero ut. Ipsam, adipisci facilis.
-              </p>
+              {props.children}
             </div>
           </div>
           {/* MainContent */}
@@ -33,6 +22,6 @@ class App extends Component {
       </div>
     );
   }
-}
+
 
 export default App;

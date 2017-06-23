@@ -1,0 +1,12 @@
+.PagesContainer {
+  background-color: #f6f7fa;
+  flex: 1;
+  display: flex;
+  overflow: auto;
+}
+
+.PagesContainer__inner {
+  padding: 50px 40px;
+  overflow-y: auto;
+  flex: 1;
+}
